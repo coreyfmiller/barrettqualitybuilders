@@ -23,7 +23,7 @@ export function Footer() {
           {/* Brand */}
           <div className="lg:col-span-1">
             <Image
-              src="/images/logo.png"
+              src="/logo.png"
               alt="Barrett Quality Builders"
               width={180}
               height={48}
