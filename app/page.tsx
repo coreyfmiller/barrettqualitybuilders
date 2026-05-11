@@ -60,7 +60,7 @@ export default function HomePage() {
         <section className="relative overflow-hidden">
           <div className="absolute inset-0">
             <Image
-              src="/downloaded-images-named/home/01-deck.jpg"
+              src="/hero.jpg"
               alt="Beautiful custom deck"
               fill
               className="object-cover"
