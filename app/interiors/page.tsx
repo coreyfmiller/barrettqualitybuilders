@@ -10,19 +10,19 @@ const interiorServices = [
     title: "Flooring",
     description:
       "Professional hardwood, laminate, and vinyl flooring installation. We ensure precision cuts and seamless finishes for a beautiful result that will last for years.",
-    image: "/images/interior-flooring.jpg",
+    image: "/downloaded-images-named/interiors/03-hardwood.png",
   },
   {
     title: "Custom Furniture",
     description:
       "Handcrafted furniture pieces built to your specifications. From tables to entertainment centers, we create functional art for your home.",
-    image: "/images/custom-shelving.jpg",
+    image: "/downloaded-images-named/home/06-interiors.jpeg",
   },
   {
     title: "Custom Shelving",
     description:
       "Built-in shelving solutions designed to maximize your space. Perfect for home offices, living rooms, and closets.",
-    image: "/images/custom-shelving.jpg",
+    image: "/downloaded-images-named/home/07-interiors.jpg",
   },
 ]
 
@@ -122,7 +122,7 @@ export default function InteriorsPage() {
               </div>
               <div className="aspect-[4/3] relative overflow-hidden rounded-lg">
                 <Image
-                  src="/images/interior-flooring.jpg"
+                  src="/downloaded-images-named/interiors/03-hardwood.png"
                   alt="Interior flooring"
                   fill
                   className="object-cover"

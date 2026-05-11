@@ -10,19 +10,19 @@ const deckTypes = [
     title: "Pressure Treated Decks",
     description:
       "The most commonly used form of decking. We hand pick every piece of lumber for our decks to ensure a uniform colour and quality finish. A stain or clear protective finish is recommended 30-60 days after installation.",
-    image: "/images/pressure-treated-deck.jpg",
+    image: "/downloaded-images-named/decks/01-pressure-treated-decks.jpg",
   },
   {
     title: "Cedar Decks",
     description:
       "Cedar decking offers a more natural look and longevity. Western red cedar or locally sourced eastern cedar is available. Built on a pressure treated frame, our cedar decks offer beauty and durability.",
-    image: "/images/hero-deck.jpg",
+    image: "/downloaded-images-named/decks/10-cedar-decks.jpg",
   },
   {
     title: "Composite Decks",
     description:
       "A no maintenance alternative to wood decking. Available in a variety of colours and grades, these products offer excellent warranties and a high end look. Hidden fasteners provide a near seamless installation.",
-    image: "/images/composite-deck.jpg",
+    image: "/downloaded-images-named/decks/14-composite-decks.jpeg",
   },
 ]
 
@@ -30,13 +30,13 @@ const additionalServices = [
   {
     title: "Pool Decks",
     description: "From a full wrap around deck to basic access, we can do it all.",
-    image: "/images/pool-deck.jpg",
+    image: "/downloaded-images-named/decks/17-pool-decks.jpg",
   },
   {
     title: "Pergolas & Privacy Walls",
     description:
       "A great way to add shade to a deck or backyard. We offer many pergola designs and privacy screens.",
-    image: "/images/pergola.jpg",
+    image: "/downloaded-images-named/decks/31-pergolas-and-privacy-walls.jpg",
   },
 ]
 

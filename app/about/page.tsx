@@ -1,4 +1,5 @@
 import Link from "next/link"
+import Image from "next/image"
 import { ArrowRight, GraduationCap, Hammer, MapPin } from "lucide-react"
 import { Button } from "@/components/ui/button"
 import { Header } from "@/components/header"
@@ -102,16 +103,13 @@ export default function AboutPage() {
                   </Link>
                 </Button>
               </div>
-              <div className="aspect-square relative overflow-hidden rounded-lg bg-secondary flex items-center justify-center">
-                <div className="text-center p-8">
-                  <div className="text-2xl font-bold text-primary">BScFE</div>
-                  <p className="mt-2 text-muted-foreground">
-                    Forest Engineering Graduate
-                  </p>
-                  <p className="text-sm text-muted-foreground">
-                    University of New Brunswick
-                  </p>
-                </div>
+              <div className="aspect-square relative overflow-hidden rounded-lg">
+                <Image
+                  src="/downloaded-images-named/about/02-michael-barrett-bscfe.jpeg"
+                  alt="Michael Barrett, BScFE - Forest Engineering Graduate"
+                  fill
+                  className="object-cover"
+                />
               </div>
             </div>
           </div>

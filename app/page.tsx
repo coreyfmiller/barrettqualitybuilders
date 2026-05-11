@@ -10,21 +10,21 @@ const services = [
     title: "Decks",
     description:
       "Custom pressure treated, cedar, and composite decks built to exceed building code requirements.",
-    image: "/images/hero-deck.jpg",
+    image: "/downloaded-images-named/home/01-deck.jpg",
     href: "/decks",
   },
   {
     title: "Fences",
     description:
       "Privacy and ornamental fences in pressure treated or cedar, built to last up to 35 years.",
-    image: "/images/fence-cedar.jpg",
+    image: "/downloaded-images-named/fences/04-six-foot-fortress-style-pressure-treated.jpg",
     href: "/fences",
   },
   {
     title: "Interiors",
     description:
       "Quality flooring, custom furniture, and shelving solutions for your home.",
-    image: "/images/interior-flooring.jpg",
+    image: "/downloaded-images-named/interiors/03-hardwood.png",
     href: "/interiors",
   },
 ]
@@ -60,7 +60,7 @@ export default function HomePage() {
         <section className="relative overflow-hidden">
           <div className="absolute inset-0">
             <Image
-              src="/images/hero-deck.jpg"
+              src="/downloaded-images-named/home/01-deck.jpg"
               alt="Beautiful custom deck"
               fill
               className="object-cover"

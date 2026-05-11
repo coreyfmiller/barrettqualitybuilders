@@ -8,64 +8,46 @@ import { Button } from "@/components/ui/button"
 import { Header } from "@/components/header"
 import { Footer } from "@/components/footer"
 
-const galleryItems = [
-  {
-    src: "/images/hero-deck.jpg",
-    alt: "Beautiful custom deck",
-    category: "Decks",
-  },
-  {
-    src: "/images/pressure-treated-deck.jpg",
-    alt: "Pressure treated deck",
-    category: "Decks",
-  },
-  {
-    src: "/images/composite-deck.jpg",
-    alt: "Composite deck",
-    category: "Decks",
-  },
-  {
-    src: "/images/pool-deck.jpg",
-    alt: "Pool deck",
-    category: "Decks",
-  },
-  {
-    src: "/images/pergola.jpg",
-    alt: "Pergola",
-    category: "Decks",
-  },
-  {
-    src: "/images/fence-cedar.jpg",
-    alt: "Cedar fence",
-    category: "Fences",
-  },
-  {
-    src: "/images/fence-pressure-treated.jpg",
-    alt: "Pressure treated fence",
-    category: "Fences",
-  },
-  {
-    src: "/images/interior-flooring.jpg",
-    alt: "Interior flooring",
-    category: "Interiors",
-  },
-  {
-    src: "/images/custom-shelving.jpg",
-    alt: "Custom shelving",
-    category: "Interiors",
-  },
+const galleryImages = [
+  "/downloaded-images-named/gallery/01-gallery.jpg",
+  "/downloaded-images-named/gallery/02-gallery.jpg",
+  "/downloaded-images-named/gallery/03-gallery.jpg",
+  "/downloaded-images-named/gallery/04-gallery.jpg",
+  "/downloaded-images-named/gallery/05-gallery.jpg",
+  "/downloaded-images-named/gallery/06-gallery.png",
+  "/downloaded-images-named/gallery/08-gallery.jpg",
+  "/downloaded-images-named/gallery/11-gallery.jpg",
+  "/downloaded-images-named/gallery/12-gallery.jpg",
+  "/downloaded-images-named/gallery/13-gallery.jpg",
+  "/downloaded-images-named/gallery/14-gallery.jpg",
+  "/downloaded-images-named/gallery/15-gallery.jpg",
+  "/downloaded-images-named/gallery/16-gallery.jpg",
+  "/downloaded-images-named/gallery/17-gallery.jpg",
+  "/downloaded-images-named/gallery/19-gallery.jpg",
+  "/downloaded-images-named/gallery/20-gallery.jpg",
+  "/downloaded-images-named/gallery/21-gallery.jpg",
+  "/downloaded-images-named/gallery/22-gallery.jpg",
+  "/downloaded-images-named/gallery/23-gallery.jpg",
+  "/downloaded-images-named/gallery/26-gallery.jpg",
+  "/downloaded-images-named/gallery/27-gallery.jpg",
+  "/downloaded-images-named/gallery/28-gallery.jpg",
+  "/downloaded-images-named/gallery/29-gallery.jpg",
+  "/downloaded-images-named/gallery/31-gallery.jpg",
+  "/downloaded-images-named/gallery/32-gallery.jpg",
+  "/downloaded-images-named/gallery/33-gallery.jpg",
+  "/downloaded-images-named/gallery/34-gallery.jpg",
+  "/downloaded-images-named/gallery/36-gallery.jpg",
+  "/downloaded-images-named/gallery/37-gallery.jpg",
+  "/downloaded-images-named/gallery/41-gallery.jpg",
+  "/downloaded-images-named/gallery/46-gallery.jpg",
+  "/downloaded-images-named/gallery/47-gallery.jpg",
+  "/downloaded-images-named/gallery/49-gallery.jpg",
+  "/downloaded-images-named/gallery/53-gallery.jpg",
+  "/downloaded-images-named/gallery/54-gallery.jpg",
 ]
 
-const categories = ["All", "Decks", "Fences", "Interiors"]
-
 export default function GalleryPage() {
-  const [activeCategory, setActiveCategory] = useState("All")
   const [lightboxImage, setLightboxImage] = useState<string | null>(null)
-
-  const filteredItems =
-    activeCategory === "All"
-      ? galleryItems
-      : galleryItems.filter((item) => item.category === activeCategory)
 
   return (
     <div className="min-h-screen flex flex-col">
@@ -85,50 +67,23 @@ export default function GalleryPage() {
           </div>
         </section>
 
-        {/* Filter Tabs */}
-        <section className="py-8 border-b border-border bg-background sticky top-[73px] z-40">
-          <div className="mx-auto max-w-7xl px-4 lg:px-8">
-            <div className="flex flex-wrap gap-2 justify-center">
-              {categories.map((category) => (
-                <button
-                  key={category}
-                  onClick={() => setActiveCategory(category)}
-                  className={`px-4 py-2 rounded-full text-sm font-medium transition-colors ${
-                    activeCategory === category
-                      ? "bg-primary text-primary-foreground"
-                      : "bg-secondary text-secondary-foreground hover:bg-secondary/80"
-                  }`}
-                >
-                  {category}
-                </button>
-              ))}
-            </div>
-          </div>
-        </section>
-
         {/* Gallery Grid */}
         <section className="py-16 lg:py-24 bg-background">
           <div className="mx-auto max-w-7xl px-4 lg:px-8">
             <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
-              {filteredItems.map((item, index) => (
+              {galleryImages.map((src, index) => (
                 <button
                   key={index}
-                  onClick={() => setLightboxImage(item.src)}
+                  onClick={() => setLightboxImage(src)}
                   className="group relative aspect-[4/3] overflow-hidden rounded-lg cursor-pointer"
                 >
                   <Image
-                    src={item.src}
-                    alt={item.alt}
+                    src={src}
+                    alt={`Project photo ${index + 1}`}
                     fill
                     className="object-cover transition-transform duration-500 group-hover:scale-105"
                   />
-                  <div className="absolute inset-0 bg-primary/0 group-hover:bg-primary/30 transition-colors flex items-end">
-                    <div className="p-4 text-left opacity-0 group-hover:opacity-100 transition-opacity">
-                      <span className="text-primary-foreground text-sm font-medium bg-primary/80 px-2 py-1 rounded">
-                        {item.category}
-                      </span>
-                    </div>
-                  </div>
+                  <div className="absolute inset-0 bg-primary/0 group-hover:bg-primary/20 transition-colors" />
                 </button>
               ))}
             </div>

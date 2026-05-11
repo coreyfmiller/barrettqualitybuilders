@@ -10,13 +10,13 @@ const fenceTypes = [
     title: "Pressure Treated Fences",
     description:
       "Our most durable option. A typical pressure treated fence can last up to 35 years with minimal maintenance. Available in fortress style for full privacy or with wire mesh for visibility.",
-    image: "/images/fence-pressure-treated.jpg",
+    image: "/downloaded-images-named/fences/01-barrett-quality-fences.jpg",
   },
   {
     title: "Cedar Fences",
     description:
       "Cedar offers a beautiful natural look with excellent longevity. Built with treated posts for durability. Available in various heights and styles to suit your needs.",
-    image: "/images/fence-cedar.jpg",
+    image: "/downloaded-images-named/fences/04-six-foot-fortress-style-pressure-treated.jpg",
   },
 ]
 
