@@ -25,9 +25,9 @@ export function Footer() {
             <Image
               src="/logo.png"
               alt="Barrett Quality Builders"
-              width={180}
-              height={48}
-              className="h-10 w-auto brightness-0 invert"
+              width={360}
+              height={96}
+              className="h-20 w-auto brightness-0 invert"
             />
             <p className="mt-4 text-sm text-primary-foreground/70 leading-relaxed">
               Quality craftsmanship for decks, fences, and interior projects in
