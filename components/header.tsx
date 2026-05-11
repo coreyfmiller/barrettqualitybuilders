@@ -25,7 +25,7 @@ export function Header() {
         {/* Logo */}
         <Link href="/" className="flex items-center gap-3">
           <Image
-            src="/logo.jpg"
+            src="/logo.png"
             alt="Barrett Quality Builders"
             width={360}
             height={96}
